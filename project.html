@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link
+   href="https://fonts.googleapis.com/css2?family=Gloock&family=Indie+Flower&display=swap"
+   rel="stylesheet"
+  />
+  <script src="script.js" defer></script>
+  <title>Rock Paper Scissors</title>
+ </head>
+ <body>
+ <header class="header">
+  <div class="header-content">ROCK PAPER SCISSORS GAME</div>
+</header>
+  <div class="container-1">
+  <h1 class="header">Welcome to Rock, Paper, Scissors!</h1>
+  <h2 class="animate">Are you ready to play?</h2>
+  <div class="instructions-container">
+    <div class="instructions">
+      You will play until you win 5 rounds against a CPU
+    </div>
+    <div class="instructions">
+      Press <span class="clickable">anywhere!</span>
+    </div>
+  </div>
+</div>
+
+<div class="container-2">
+  <div class="start">
+    <div class="scores-container">
+    <div class="player-box">
+ Player: <span class="player" id="playerScore">0</span>
+</div>
+<div class="computer-box">
+ Computer: <span class="computer" id="computerScore">0</span>
+</div>
+
+    </div>
+    <div class="game">
+      <button><img src="rock.jpg.png" id="rock" /></button>
+      <button><img src="paper.jpg.png" id="paper" /></button>
+      <button><img src="scissor.jpg.png" id="scissors" /></button>
+    </div>
+    <div id="gameOverText"></div>
+    <div class="text"></div>
+  </div>
+</div>
+</html>

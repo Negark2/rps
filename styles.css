@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.scores-container {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space between boxes */
+  align-items: center; /* Align vertically */
+  width: 100%; /* Take full width of container */
+}
+
+
+.player-box, .computer-box {
+  width: 49%; /* Set width for each box */
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.player-box:last-child {
+    margin-right: 0;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 8vh; /* Changed height to 8vh */
+    text-align: center;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header-content {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.animate {
+    position: relative;
+    z-index: auto;
+    width: 100%;
+    height: 8vh; /* Changed height to 8vh */
+    text-align: center;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.welcome-text {
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #242424;
+    background: linear-gradient(to top left, #595959, #242424);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center; 
+}
+
+.container-1 {
+    flex: 1;
+    padding: 48px 24px;
+    text-align: center;
+    max-width: 900px;
+    background-color: #222;
+}
+
+
+/* Keep the existing CSS */
+
+.container-2 {
+    display: none; /* Initially hide the container */
+}
+
+.start {
+    flex: 1;
+    padding: 48px 24px;
+    text-align: center;
+    max-width: 1500px;
+}
+
+.start button { /* Target buttons within the .start container */
+  width: max-content; /* Button width adjusts to content */
+  padding: 10px; /* Add padding for spacing */
+  margin: 5px; /* Add margin for separation */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+
+.hidden {
+    display: none;
+}
+
+.instructions {
+    font-size: 1.3em;
+}
+
+.instructions-container {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer {
+    width: 100vw;
+    background-color: #333;
+    padding: 12px 24px;
+    text-align: center;
+}
+
+.scores {
+    font-size: 55px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game button {
+  flex: 1; /* Makes buttons flex equally within available space */
+}
+
+img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(0.90);
+}
+
+.choices,
+.text {
+    height: 25px;
+    font-size: 1.5em;
+    margin: 20px 5px;
+}
+
+.remove {
+    color: #121212;
+    padding: 24px 48px;
+    font-size: 24px;
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clickable {
+    font-weight: bolder;
+}
+
